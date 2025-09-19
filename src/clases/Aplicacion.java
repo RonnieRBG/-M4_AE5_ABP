@@ -11,38 +11,62 @@ public class Aplicacion {
 			Prestamo p5 = new Prestamo ("José", false);
 			
 			p1.agregarLibro ("HP1", "Jkrowling", 100);
-			p1.agregarLibro ("HP1", "Jkrowling", 190);
+			p1.agregarLibro ("HP2", "Jkrowling", 190);
+			System.out.println();
+			p1.mostrarDetallesDelPrestamo();
+			System.out.println();
+			System.out.println("Total: " + p1.calcularTotalDeReemplazo());
+			System.out.println();
+			p1.mostrarEstatus();
+			System.out.println();
+			
+			System.out.println("----------------------------");
 			
 			p2.agregarLibro ("HP3", "Jkrowling", 150);
 			p2.agregarLibro ("HP4", "Jkrowling", 120);
-			
-			p3.agregarLibro ("HP5", "Jkrowling", 100);
-			p3.agregarLibro ("HP6", "Jkrowling", 130);
-			
-			p4.agregarLibro ("HP7", "jkrowling", 200);
-			p4.agregarLibro ("HP8", "jkrowling", 150);
-			
-			p5.agregarLibro ("HP9", "jkrowling", 150);
-			p5.agregarLibro ("HP10", "jkrowling", 200);
-			
-			p1.mostrarDetallesDelPrestamo();
 			System.out.println();
 			p2.mostrarDetallesDelPrestamo();
 			System.out.println();
+			System.out.println("Total: " + p2.calcularTotalDeReemplazo());
+			p2.mostrarEstatus();
+			System.out.println();
+
+			System.out.println("----------------------------");
+			
+			
+			p3.agregarLibro ("HP5", "Jkrowling", 100);
+			p3.agregarLibro ("HP6", "Jkrowling", 130);
 			p3.mostrarDetallesDelPrestamo();
 			System.out.println();
-			p4.mostrarDetallesDelPrestamo();
-			System.out.println();
-			p5.mostrarDetallesDelPrestamo();
-			System.out.println();
-			
-			
-			p1.mostrarEstatus();
-			System.out.println();
+			System.out.println("Total: " + p3.calcularTotalDeReemplazo());
 			p3.mostrarEstatus();
 			System.out.println();
+			System.out.println("----------------------------");
+			
+			p4.agregarLibro ("HP7", "jkrowling", 200);
+			p4.agregarLibro ("HP8", "jkrowling", 150);
+			p4.mostrarDetallesDelPrestamo();
+			System.out.println();
+			System.out.println("Total: " + p4.calcularTotalDeReemplazo());
+			p4.mostrarEstatus();
+			System.out.println();
+			System.out.println("----------------------------");
+			
+			p5.agregarLibro ("HP9", "jkrowling", 150);
+			p5.agregarLibro ("HP10", "jkrowling", 200);
+			p5.mostrarDetallesDelPrestamo();
+			System.out.println();
+			System.out.println("Total: " + p5.calcularTotalDeReemplazo());
 			p5.mostrarEstatus();
 			System.out.println();
+			System.out.println("----------------------------");
+			
+			
+				
+			
+	
+			
+			
 	}
 			
 			

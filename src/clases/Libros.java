@@ -48,7 +48,7 @@ public class Libros {
 		return "Titulo=  " + titulo + " " +
 				",Autor= "+ autor + " " +
 				",Precio= "+
-				precioDeReemplazo + "]" + "\n";
+				precioDeReemplazo;
 		
 	}
 

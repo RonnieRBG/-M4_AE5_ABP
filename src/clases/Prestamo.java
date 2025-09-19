@@ -68,7 +68,7 @@ public class Prestamo {
 	}
 	
 	public void mostrarDetallesDelPrestamo () {
-		if (this.estatus = true) {
+		if (this.estatus) {
 			System.out.println("Detalles del prestamo: ");
 			System.out.println("El nombre del usuario es : " + this.nombre);
 			System.out.println("Libros en uso: " + this.libro);
@@ -78,12 +78,17 @@ public class Prestamo {
 	}
 	
 	public double calcularTotalDeReemplazo () {
+		if (this.estatus) {
 		double total = 0;
 		for ( Libros l : libro) {
 			total += l.getPrecioDeReemplazo();
 		}
 		 return total;
+	}else {
+		return 0.0;
 	}
+	}
+	
     @Override
     public String toString() {
         return "Prestamo{" +
